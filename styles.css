@@ -1,0 +1,127 @@
+/* Reset default browser styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Center the content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.left-section{
+  flex: 1;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 60px;
+  text-align: left; /* Add this line */
+
+}
+
+
+/* Style the paragraph */
+p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Style the navbar */
+nav {
+  /* background-color: rgba(0, 0, 0, 0.5); Black with 50% opacity */
+  overflow: hidden;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1); /* Add a shadow effect */
+  padding: 20px 10px; /* Add some padding */
+}
+
+/* Style the links inside the navbar */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 20px;
+  border-radius: 20px;
+
+}
+
+nav ul li a {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add a transition effect for both background color and text color */
+}
+
+/* Change the color of links on hover */
+nav ul li a:hover {
+  background-color: #4815d6; /* Change the hover background color */
+  color: #4CAF50; /* Change the hover text color to a green color */
+}
+
+/* Add a color to the active/current link */
+nav ul li a.active {
+  background-color: #3e8e41; /* Change the active background color */
+  color: white; /* Change the active text color */
+}
+.next-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #45a049;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.social-media a i {
+  color: #ffffff; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-media a:hover i {
+  color: #4400ff; /* Color on hover */
+}
