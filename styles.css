@@ -54,7 +54,7 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 nav ul li {

@@ -6,29 +6,50 @@
     <title>About Me</title>
     <!-- Add Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            /* background-color: rgba(0,0,0,.5); */
+            background-image: url('img/rk1.jpg');
+        }
+        .rounded-img {
+        width: 200px; /* Adjust as needed */
+        height: 200px; /* Adjust as needed */
+        object-fit: cover; /* Ensures the image covers the whole area without distortion */
+}
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section id="about" class="py-5">
         <div class="container">
-        <a href="index.html" class="btn btn-secondary mb-3">Back</a>
-        .next-button {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .next-button:hover {
-            background-color: #45a049;
-        }
 
             <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/pp_size_photo.jpg" alt="Profile Picture" class="img-fluid rounded-circle rounded-img">
+                </div>
                 <div class="col-lg-8 mx-auto">
                     <h2>About Me</h2>
                     <p class="lead">
