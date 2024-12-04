@@ -3,80 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Under Maintenance</title>
     <style>
         body {
-            background: url('img/rkc.jpg'); 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
         }
-
-        /* .container {
-            flex-grow: 1;
-            padding: 15px;
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 50px;
             border-radius: 10px;
-        } */
-
-        footer {
-            margin-top: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .spinner {
+            margin: 20px auto;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f4f6;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
-    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="skills.html">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacts.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <div class="container">
-        <div class="left-section">
-            <h1>Welcome to the Engineer's house</h1>
-            <p class="lead text-center">Meet Raj K Kathayat, 
-                the creative force behind the keyboard,<br> weaving 
-                a symphony of innovation as a dedicated computer 
-                engineer.  </p>
-        </div>
-        
+        <h1>We'll be back soon!</h1>
+        <p>Sorry for the inconvenience but we're performing some maintenance at the moment. We'll be back online shortly!</p>
+        <div class="spinner"></div>
     </div>
-    
-    <footer class="footer mt-auto py-3">
-        <div class="container text-center">
-            <span class="text-muted">© 2024 rajkathayat.com.np</span>
-        </div>
-        <div class="social-media">
-            <a href="https://www.facebook.com/rajkkathayat"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/r_kathayat"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/rajkathayat_/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/rkathayat/"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>

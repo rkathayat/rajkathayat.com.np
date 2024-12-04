@@ -1,11 +1,14 @@
 document.getElementById('nextButton').addEventListener('click', function() {
-    // Replace with the actual URLs of your pages
-    var pages = ['index.html', 'skills.html', 'projects.html', 'about.html'];
+    // Replace with the actual IDs of your sections
+    var sections = ['index', 'about', 'skills', 'projects', 'contacts'];
     
-    var currentPage = window.location.href.split('/').pop();
-    var pageIndex = pages.indexOf(currentPage);
+    var currentSection = document.querySelector('.current-section');
+    var currentIndex = sections.indexOf(currentSection.id);
     
-    if (pageIndex >= 0 && pageIndex < pages.length - 1) {
-        window.location.href = pages[pageIndex + 1];
+    if (currentIndex >= 0 && currentIndex < sections.length - 1) {
+        var nextSection = document.getElementById(sections[currentIndex + 1]);
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+        currentSection.classList.remove('current-section');
+        nextSection.classList.add('current-section');
     }
 });
